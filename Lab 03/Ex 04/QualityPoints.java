@@ -4,7 +4,12 @@ public class QualityPoints {
     public static void main(String[] args) {
         String input = JOptionPane.showInputDialog(null, "Enter student's average:");
         double average = Double.parseDouble(input);
-        int qualityPoints;
+        int qualityPoints = helper(average);
+        JOptionPane.showMessageDialog(null, "Quality Points: " + qualityPoints);
+    }
+
+    public static int helper(double average) {
+        int qualityPoints = 0;
         if (average >= 90 && average <= 100) {
             qualityPoints = 4;
         } else if (average >= 80 && average <= 89) {
@@ -16,6 +21,6 @@ public class QualityPoints {
         } else {
             qualityPoints = 0;
         }
-        JOptionPane.showMessageDialog(null, "Quality Points: " + qualityPoints);
+        return qualityPoints;
     }
 }
