@@ -1,0 +1,6 @@
+Rating Frequency
+     1         3
+     2         1
+     3         0
+     4         1
+     5         0
